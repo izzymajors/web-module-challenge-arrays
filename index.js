@@ -67,7 +67,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(array){
-    
+    return array.constructor.toString().indexOf("Array")>-1;
+   
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -83,8 +84,9 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(){
-   
+function addFlavor(array,){
+   array.unshift('Banana Nut Fudge');
+   return array;
 }
 
 
@@ -99,7 +101,7 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(){
+function removeLastFlavor(array){
     
     
 }
